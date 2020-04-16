@@ -98,9 +98,19 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 80%;
+      }
     }
 
     .btn {
@@ -108,7 +118,13 @@
       font-size: 2rem;
       text-align: center;
       padding: 1rem 0;
-      width: 80%;
+      width: 100%;
+
+      @media @mobile {
+        .sign-up-btn(15px, #18A2B8, #fff);
+        font-size: 1.8rem;
+        padding: 1.3rem 0;
+      }
     }
   }
 }// home

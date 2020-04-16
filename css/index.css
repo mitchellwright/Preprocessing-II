@@ -315,9 +315,21 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
 .home .content-pick .btn {
   border-radius: 15px;
@@ -326,5 +338,14 @@ img {
   font-size: 2rem;
   text-align: center;
   padding: 1rem 0;
-  width: 80%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .content-pick .btn {
+    border-radius: 15px;
+    background-color: #18A2B8;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1.3rem 0;
+  }
 }
